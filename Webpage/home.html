@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="logo.png", height=60px/></a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="google.html">Google</a></li>
+                        <li><a href="NFTY.html">NFTY</a></li>
+                        <li><a href="Microsoft.html">Microsoft</a></li>
+                        <li><a href="Apple.html">Apple</a></li>
+                        <li><a href="Gold.html">Gold</a></li>
+                        <li><a href="Housing.html">Housing</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <section class="home">
+        </section>
+        <div style="height: 1000px">
+            <!-- just to make scrolling effect possible -->
+                <h2 class="myH2">Welcome to INVESTOPEDIA</h2>
+                <p class="myP">This is an all in one website for investers.</p>
+                <p class="myP">We have a collection of the predictions of the most common stocks people invest in and other assets such as gold and housing. Do check out these sections!</a></p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="myP">Wondering how to use our platform? Here's how you can uncderstand our product:</p>
+                <p></p>
+                <br>
+                <br>
+                <ol class="myP">
+                    <li>We have a range of assets available in our website. Nowadays the most common stocks that people are investing in are of MNC's like Apple, Microsoft, Google and NFTY.</li>
+                    <li>Choose anyone of the following stocks and go to their respective webpage. There you will see a graph of past prices and our algorithms prediction.</li>
+                    <li>Our model predicts the prices of tomorrow and gives you a recommendation of wether to invest or not. If it is red, you should not and if green then you should.</li>
+                    <li>Once you see the eye opening predictions, you can read through the small jist or reasoning as to why or why not invest in this.</li>
+                    <li>SEE!! ITS THAT EASY!!</li>
+                </ol>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="myP">WE HOPE YOU FIND THIS USEFULL</p>
+                <p class="myP"></p>
+                    <p class="myP">
+                </p>
+        </div>
+    
+    <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+    
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Our product</a></li>
+        </ul>
+        </div>
+        
+        <div class="row"> 
+        </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

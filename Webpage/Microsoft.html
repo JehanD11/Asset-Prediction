@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="logo.png", height=60px/></a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="google.html">Google</a></li>
+                        <li><a href="NFTY.html">NFTY</a></li>
+                        <li><a href="Microsoft.html">Microsoft</a></li>
+                        <li><a href="Apple.html">Apple</a></li>
+                        <li><a href="Gold.html">Gold</a></li>
+                        <li><a href="Housing.html">Housing</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <section class="home">
+        </section>
+        <div style="height: 1000px">
+            <h2 class = "myH2">Microsoft stock prices</h2>
+            <img src="Graphs/Microsoft.jpg" alt="Microsoft stock graph" height = 500px class="imgcenter">
+            <p class="myP">This is the trend for the Microsoft stock prices for 8/15/22 through 9/23/22</p>
+            <p class="myP">The Predicted price for 10/23/22 is: <span style="color:rgb(255, 0, 0)">$129.37</span></p>
+            <p style="color: rgb(255, 0, 0); text-align: center; font-size: 25px; font-family: Quicksand;">Our Recommendation -> SELL</p>
+            <p style="font-size: large; color: white; text-align: center; padding-left: 5%; padding-right: 5%;">
+                We recommend you to SELL this stock immediatly. This is a dead stock as of now and wont give any profit. Looking at the latest trends the stock is highly likely to dip more after tomorrow.
+                When it dips you will incur a big loss to the price at which you bought it. Right now if we look from a monetory perspective then you should sell. 
+                The prices are likely to drop down and it is better to get rid of this stock right now. You can also WAIT for the rise again.
+            </p>
+        </div>
+    
+    <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+        <footer>
+            <div class="footer">
+            <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            
+            <div class="row">
+            <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Our product</a></li>
+            </ul>
+            </div>
+            
+            <div class="row"> 
+            </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
